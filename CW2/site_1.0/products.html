@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robot Juice | Products</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Iceberg&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Robot Juice</h1>
-      <p>fictitious cycle lubricants</p>
+      <div class="logo">
+        <h1><span class="primary-color">Robot</span> Juice</h1>
+        <p>fictitious cycle lubricants</p>
+      </div>
       <nav>
         <a href="index.html">Home</a>
         <a href="products.html" class="active">Products</a>
@@ -106,13 +114,13 @@
       </section>
       <div class="spacer"></div>
       <section id="reviews-container">
-        <h2>Product Reviews *****</h2>
+        <h2>Product Reviews <span class="star-filled">*****</span></h2>
         <div id="reviews"></div>
         <button
           id="show-all-btn"
           onclick="renderReviews(reviews); hideElement('show-all-btn')"
         >
-          Show All Reviews
+          READ ALL REVIEWS
         </button>
       </section>
     </main>
