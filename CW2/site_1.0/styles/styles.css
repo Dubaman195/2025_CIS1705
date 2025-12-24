@@ -159,6 +159,7 @@ nav a.active {
   display: flex;
   flex-direction: row;
   gap: 80px;
+  margin-bottom: 100px;
 }
 
 .news-container {
@@ -218,6 +219,69 @@ nav a.active {
   font-size: 14px;
 }
 
-footer {
-  width: 100%;
+footer h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 2px solid var(--accent-color);
+  border-top: 2px solid var(--accent-color);
+  padding: 25px 25vw;
+  color: var(--primary-color);
+}
+
+.footer-top img {
+  height: 200px;
+}
+
+.footer-top p {
+  font-size: 13px;
+  color: var(--primary-color);
+  padding-left: 3px;
+  font-weight: bold;
+}
+
+.footer-top a {
+  color: var(--primary-color);
+}
+
+.f-review {
+  width: 33%;
+}
+
+.f-review-container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  flex: 3;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 25vw 100px 25vw;
+  font-size: 12px;
+  background-color: #c5110b;
+  font-weight: bold;
+}
+
+.footer-bottom a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ffffff;
+}
+
+.links {
+  flex: 1;
 }
