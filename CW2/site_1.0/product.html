@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Damion&family=Iceberg&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/grid.css" />
   </head>
   <body>
     <header>
@@ -20,7 +21,7 @@
       </div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="products.html" class="active">Products</a>
+        <a href="product.html" class="active">Products</a>
         <a href="#">Protect</a>
         <a href="#">Stockist's</a>
         <a href="#">Events</a>
@@ -49,36 +50,47 @@
         <img
           src="robot-juice-images/robotjuicebikeoil.jpg"
           alt="Full image of bike oil"
+          class="prod-full"
         />
         <div class="prod-info">
           <h2>Bike Oil</h2>
-          <p>£99.99</p>
+          <p class="price">£99.99</p>
           <form>
-            <select id="size" name="size">
-              <option value="" disabled selected>Size</option>
-              <option value="100ml">100ml</option>
-              <option value="250ml">250ml</option>
-              <option value="500ml">500ml</option>
-            </select>
+            <div>
+              <div class="custom-select">
+                <select id="size" name="size">
+                  <option value="" disabled selected>Size</option>
+                  <option value="100ml">100ml</option>
+                  <option value="250ml">250ml</option>
+                  <option value="500ml">500ml</option>
+                </select>
+              </div>
 
-            <select id="qty" name="qty">
-              <option value="" disabled selected>Qty</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+              <div class="custom-select">
+                <select id="qty" name="qty">
+                  <option value="" disabled selected>Qty</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
             <button type="submit">BUY NOW</button>
-            <p><a href="#">FIND NEAREST STOCKIST</a></p>
+            <a href="#"><p class="prod-info-links">FIND NEAREST STOCKIST</a><br>
+            <a href="#">SHARE</a>
+            <a href="#"
+              ><img src="robot-juice-images/facebook.jpg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="robot-juice-images/twitter.jpg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="robot-juice-images/email.jpg" alt="Email"
+            /></a></p>
             <p>
-              <a href="#">SHARE</a>
-              <img src="robot-juice-images/facebook.jpg" alt="Facebook" />
-              <img src="robot-juice-images/twitter.jpg" alt="Twitter" />
-              <img src="robot-juice-images/email.jpg" alt="Email" />
-            </p>
-            <p>
-              Robot Jucie bike oil for bicylces stops rust and other corrosion
+              Robot Juice bike oil for bicylces stops rust and other corrosion
               from starting. Applied to already corroding metals it breaks down
               the corrosion and starts preventing it form building up and
               protects from the point of contact.
@@ -142,16 +154,18 @@
         </article>
         <article class="links">
           <h2>Links</h2>
-          <a href="#">Edge Hill University</a>
-          <a href="#">Dave Walsh</a>
-          <a href="https://twitter.com/walsh_d">https://twitter.com/walsh_d</a>
-          <a href="#">CIS1110 - Web Design and Development module</a>
+          <a href="#"><p>Edge Hill University</p></a>
+          <a href="#"><p>Dave Walsh</p></a>
+          <a href="https://twitter.com/walsh_d"
+            ><p>https://twitter.com/walsh_d</p></a
+          >
+          <a href="#"><p>CIS1110 - Web Design and Development module</p></a>
         </article>
       </div>
       <div class="footer-bottom">
         <div class="footer-left">
           <p>
-            Roboj Juice Fictitious Products Not Ltd. Unit 9¾, Privet Drive,
+            Robot Juice Fictitious Products Not Ltd. Unit 9¾, Privet Drive,
             Little Whingeing, Surrey, DN18 5RP
           </p>
           <p>Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk</p>
@@ -167,58 +181,8 @@
     </footer>
   </body>
 </html>
+<script src="scripts/reviews.js"></script>
 <script>
-  var reviewsContainer = document.getElementById("reviews");
-
-  var api_url = "https://cis1110apicw.computing.edgehill.ac.uk/reviews";
-
-  var reviews = [];
-
-  window.addEventListener("load", function () {
-    fetch(api_url)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok" + response.statusText);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        reviews = data;
-        renderReviews(reviews.slice(0, 5));
-      })
-      .catch((error) => {
-        console.error(
-          "There has been a problem with the fetch operation:",
-          error
-        );
-        reviewsContainer.innerHTML = "<p>Could not load reviews.</p>";
-      });
-  });
-
-  function renderReviews(reviewsToRender) {
-    reviewsContainer.innerHTML = "";
-    reviewsToRender.forEach((review) => {
-      var ratingStars = "";
-      for (let i = 0; i < 5; i++) {
-        if (i < review.rating) {
-          ratingStars += "<span class='star-filled'>*</span>";
-        } else {
-          ratingStars += "<span class='star-empty'>*</span>";
-        }
-      }
-
-      reviewsContainer.innerHTML += `
-      <div class="review">
-        <img src="robot-juice-images/reviewicon1.jpg" alt="Review icon">
-        <div class="review-title">
-          <h2 class="rating">${ratingStars}</h2>
-          <h3 class="review-name">${review.nickname}</h3>
-        </div>
-        <p class="review-content">${review.review}</p>
-      </div>`;
-    });
-  }
-
   function hideElement(elementId) {
     var element = document.getElementById(elementId);
     element.style.display = "none";
