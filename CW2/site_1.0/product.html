@@ -1,190 +1,241 @@
+<!-- ============ -->
+<!-- Product Page -->
+<!-- ============ -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robot Juice | Products</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Damion&family=Iceberg&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/grid.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h1><span class="primary-color">Robot</span> Juice</h1>
-        <p>fictitious cycle lubricants</p>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="product.html" class="active">Products</a>
-        <a href="#">Protect</a>
-        <a href="#">Stockist's</a>
-        <a href="#">Events</a>
-        <a href="#">Reviews</a>
-      </nav>
-    </header>
-    <main>
-      <section id="products">
-        <div class="prod-gallery">
-          <img
-            src="robot-juice-images/prod-thumb1.jpg"
-            alt="Thumbnail of bike oil"
-            class="prod-thumb"
-          />
-          <img
-            src="robot-juice-images/prod-thumb2.jpg"
-            alt="Thumbnail of bike chains"
-            class="prod-thumb"
-          />
-          <img
-            src="robot-juice-images/prod-thumb3.jpg"
-            alt="Thumbnail of oil splatter"
-            class="prod-thumb"
-          />
-        </div>
-        <img
-          src="robot-juice-images/robotjuicebikeoil.jpg"
-          alt="Full image of bike oil"
-          class="prod-full"
-        />
-        <div class="prod-info">
-          <h2>Bike Oil</h2>
-          <p class="price">£99.99</p>
-          <form>
-            <div>
-              <div class="custom-select">
-                <select id="size" name="size">
-                  <option value="" disabled selected>Size</option>
-                  <option value="100ml">100ml</option>
-                  <option value="250ml">250ml</option>
-                  <option value="500ml">500ml</option>
-                </select>
-              </div>
-
-              <div class="custom-select">
-                <select id="qty" name="qty">
-                  <option value="" disabled selected>Qty</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-            </div>
-            <button type="submit">BUY NOW</button>
-            <a href="#"><p class="prod-info-links">FIND NEAREST STOCKIST</a><br>
-            <a href="#">SHARE</a>
-            <a href="#"
-              ><img src="robot-juice-images/facebook.jpg" alt="Facebook"
-            /></a>
-            <a href="#"
-              ><img src="robot-juice-images/twitter.jpg" alt="Twitter"
-            /></a>
-            <a href="#"
-              ><img src="robot-juice-images/email.jpg" alt="Email"
-            /></a></p>
-            <p>
-              Robot Juice bike oil for bicylces stops rust and other corrosion
-              from starting. Applied to already corroding metals it breaks down
-              the corrosion and starts preventing it form building up and
-              protects from the point of contact.
-            </p>
-          </form>
-        </div>
-      </section>
-
-      <div class="spacer"></div>
-
-      <section id="similar-products">
-        <h2>Similar Products</h2>
-        <div class="sim-prod-gallery">
-          <a>
-            <img src="robot-juice-images/simprod.jpg" alt="Similar product 1" />
-          </a>
-          <a>
-            <img src="robot-juice-images/simprod.jpg" alt="Similar product 2" />
-          </a>
-          <a>
-            <img src="robot-juice-images/simprod.jpg" alt="Similar product 3" />
-          </a>
-          <a>
-            <img src="robot-juice-images/simprod.jpg" alt="Similar product 4" />
-          </a>
-          <a>
-            <img src="robot-juice-images/simprod.jpg" alt="Similar product 5" />
-          </a>
-          <a>
-            <img src="robot-juice-images/simprod.jpg" alt="Similar product 6" />
-          </a>
-        </div>
-      </section>
-      <div class="spacer"></div>
-      <section id="reviews-container">
-        <h2>Product Reviews <span class="star-filled">*****</span></h2>
-        <div id="reviews"></div>
-        <button
-          id="show-all-btn"
-          onclick="renderReviews(reviews); hideElement('show-all-btn')"
-        >
-          READ ALL REVIEWS
-        </button>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-top">
-        <article class="f-review-container">
-          <img
-            src="robot-juice-images/cyclemagazine.jpg"
-            alt="Front page of the Cycling Magazine"
-          />
-          <div class="f-review">
-            <h2>Latest Reviews</h2>
-            <p>
-              Cycling magazine has given Robot Juice a 5 star rating in its
-              latest reviews of dry lubricants. Robot Juice Dry lube was rated
-              the highest out of over 40 top brand dry lubs.
-            </p>
-          </div>
-        </article>
-        <article class="links">
-          <h2>Links</h2>
-          <a href="#"><p>Edge Hill University</p></a>
-          <a href="#"><p>Dave Walsh</p></a>
-          <a href="https://twitter.com/walsh_d"
-            ><p>https://twitter.com/walsh_d</p></a
-          >
-          <a href="#"><p>CIS1110 - Web Design and Development module</p></a>
-        </article>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-left">
-          <p>
-            Robot Juice Fictitious Products Not Ltd. Unit 9¾, Privet Drive,
-            Little Whingeing, Surrey, DN18 5RP
-          </p>
-          <p>Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk</p>
-        </div>
-        <div class="footer-right">
-          <p>
-            <a href="#">Contact Us</a> | <a href="#">Privacy</a> |
-            <a href="#">Terms & Conditions</a> | <a href="#">Accessibility</a>
-          </p>
-          <p>Copyright © 2018 Dave Walsh. Design by Dave Walsh.</p>
-        </div>
-      </div>
-    </footer>
-  </body>
+	<head>
+		<!-- Character set for the webpage which supports most characters and symbols -->
+		<meta charset="UTF-8" />
+		<!-- Meta tags to improve responsiveness on the webpage when thje resolution changes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Page Title -->
+		<title>Robot Juice | Home</title>
+		<!-- Google Fonts to import necessary fonts in the specifiation -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Damion&family=Iceberg&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- CSS imports to style the webpage -->
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/grid.css" />
+	</head>
+	<body>
+		<!-- Header Section which contains the branding and navigation -->
+		<header>
+			<!-- Logo -->
+			<div class="logo">
+				<h1><span class="primary-color">Robot</span> Juice</h1>
+				<p>fictitious cycle lubricants</p>
+			</div>
+			<!-- Navigation -->
+			<nav>
+				<a href="index.html">Home</a>
+				<!-- Active class to display the current page -->
+				<a href="product.html" class="active">Products</a>
+				<a href="#">Protect</a>
+				<a href="#">Stockist's</a>
+				<a href="#">Events</a>
+				<a href="#">Reviews</a>
+			</nav>
+		</header>
+		<!-- Main Content Section -->
+		<main>
+			<!-- Products Section -->
+			<section id="products">
+				<!-- Product Thumbnail Gallery to display other product images -->
+				<div class="prod-gallery">
+					<img
+						src="robot-juice-images/prod-thumb1.jpg"
+						alt="Thumbnail of bike oil"
+						class="prod-thumb"
+					/>
+					<img
+						src="robot-juice-images/prod-thumb2.jpg"
+						alt="Thumbnail of bike chains"
+						class="prod-thumb"
+					/>
+					<img
+						src="robot-juice-images/prod-thumb3.jpg"
+						alt="Thumbnail of oil splatter"
+						class="prod-thumb"
+					/>
+				</div>
+				<!-- Product Full Image -->
+				<img
+					src="robot-juice-images/robotjuicebikeoil.jpg"
+					alt="Full image of bike oil"
+					class="prod-full"
+				/>
+				<!-- Product Information -->
+				<div class="prod-info">
+					<h2>Bike Oil</h2>
+					<p class="price">£99.99</p>
+					<!-- Product Form -->
+					<form>
+						<!-- Div to seperate dropdowns from buttons -->
+						<div>
+							<!-- Size Selection Dropdown -->
+							<select id="size" name="size">
+								<!-- Disabled option to act as description -->
+								<option value="" disabled selected>Size</option>
+								<option value="100ml">100ml</option>
+								<option value="250ml">250ml</option>
+								<option value="500ml">500ml</option>
+							</select>
+							<!-- Quantity Selection Dropdown -->
+							<select id="qty" name="qty">
+								<!-- Disabled option to act as description -->
+								<option value="" disabled selected>Qty</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						<!-- Buy Now Button -->
+						<button type="submit">BUY NOW</button>
+						<!-- Find Nearest Stockist Link -->
+						<a href="#">
+							<p class="prod-info-links">FIND NEAREST STOCKIST</p>
+						</a>
+						<div class="share">
+							<!-- Share Link -->
+							<a href="#">
+								<p class="prod-info-links">SHARE</p>
+							</a>
+							<!-- Social Media Icons -->
+							<a href="#"
+								><img src="robot-juice-images/facebook.jpg" alt="Facebook"
+							/></a>
+							<a href="#"
+								><img src="robot-juice-images/twitter.jpg" alt="Twitter"
+							/></a>
+							<a href="#"
+								><img src="robot-juice-images/email.jpg" alt="Email"
+							/></a>
+						</div>
+						<!-- Product Description -->
+						<p>
+							Robot Juice bike oil for bicylces stops rust and other corrosion
+							from starting. Applied to already corroding metals it breaks down
+							the corrosion and starts preventing it form building up and
+							protects from the point of contact.
+						</p>
+					</form>
+				</div>
+			</section>
+			<!-- Spacer -->
+			<div class="spacer"></div>
+			<!-- Similar Products Section -->
+			<section id="similar-products">
+				<h2>Similar Products</h2>
+				<!-- Similar Products Gallery -->
+				<div class="sim-prod-gallery">
+					<a>
+						<img src="robot-juice-images/simprod.jpg" alt="Similar product 1" />
+					</a>
+					<a>
+						<img src="robot-juice-images/simprod.jpg" alt="Similar product 2" />
+					</a>
+					<a>
+						<img src="robot-juice-images/simprod.jpg" alt="Similar product 3" />
+					</a>
+					<a>
+						<img src="robot-juice-images/simprod.jpg" alt="Similar product 4" />
+					</a>
+					<a>
+						<img src="robot-juice-images/simprod.jpg" alt="Similar product 5" />
+					</a>
+					<a>
+						<img src="robot-juice-images/simprod.jpg" alt="Similar product 6" />
+					</a>
+				</div>
+			</section>
+			<!-- Spacer -->
+			<div class="spacer"></div>
+			<!-- Reviews Section -->
+			<section id="reviews-container">
+				<h2>Product Reviews <span class="star-filled">*****</span></h2>
+				<!-- Dynamic Reviews from API -->
+				<div id="reviews"></div>
+				<!-- Show All Reviews Button -->
+				<!-- 
+        renderReviews(reviews) - Calls the renderReviews function with the reviews array (defined in the script tag) as an argument
+        hideElement('show-all-btn') - Hides the show all reviews button
+        onclick="renderReviews(reviews); hideElement('show-all-btn')" - When the button is clicked, it calls the renderReviews function and hides the button
+        -->
+				<button
+					id="show-all-btn"
+					onclick="renderReviews(reviews); hideElement('show-all-btn')"
+				>
+					READ ALL REVIEWS
+				</button>
+			</section>
+		</main>
+		<!-- Footer section displaying extra news and navigation, copyright information and contact information -->
+		<footer>
+			<!-- Footer Top Section -->
+			<div class="footer-top">
+				<!-- Footer Review Section -->
+				<article class="f-review-container">
+					<!-- Footer Review Image -->
+					<img
+						src="robot-juice-images/cyclemagazine.jpg"
+						alt="Front page of the Cycling Magazine"
+					/>
+					<!-- Footer Review Text -->
+					<div class="f-review">
+						<h2>Latest Reviews</h2>
+						<p>
+							Cycling magazine has given Robot Juice a 5 star rating in its
+							latest reviews of dry lubricants. Robot Juice Dry lube was rated
+							the highest out of over 40 top brand dry lubs.
+						</p>
+					</div>
+				</article>
+				<!-- Footer Links Section -->
+				<article class="links">
+					<!-- Footer Links Header -->
+					<h2>Links</h2>
+					<!-- Footer Links -->
+					<a href="#">
+						<p>Edge Hill University</p>
+					</a>
+					<a href="#">
+						<p>Dave Walsh</p>
+					</a>
+					<a href="https://twitter.com/walsh_d">
+						<p>https://twitter.com/walsh_d</p>
+					</a>
+					<a href="#">
+						<p>CIS1110 - Web Design and Development module</p>
+					</a>
+				</article>
+			</div>
+			<!-- Footer Bottom Section -->
+			<div class="footer-bottom">
+				<!-- Address and Contacts -->
+				<div class="footer-left">
+					<p>
+						Robot Juice Fictitious Products Not Ltd. Unit 9¾, Privet Drive,
+						Little Whingeing, Surrey, DN18 5RP
+					</p>
+					<p>Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk</p>
+				</div>
+				<!-- Terms and Conditions and Copyright -->
+				<div class="footer-right">
+					<p>
+						<a href="#">Contact Us</a> | <a href="#">Privacy</a> |
+						<a href="#">Terms & Conditions</a> | <a href="#">Accessibility</a>
+					</p>
+					<p>Copyright © 2018 Dave Walsh. Design by Dave Walsh.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- JS imports to add a dynamic reviews section -->
+		<script src="scripts/reviews.js"></script>
+	</body>
 </html>
-<script src="scripts/reviews.js"></script>
-<script>
-  function hideElement(elementId) {
-    var element = document.getElementById(elementId);
-    element.style.display = "none";
-  }
-</script>
