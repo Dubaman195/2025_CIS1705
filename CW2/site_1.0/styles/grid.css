@@ -100,12 +100,12 @@ nav a {
 	display: flex;
 	flex-direction: row;
 	gap: 50px;
-	width: 100%;
+	width: 50%;
 }
 
 .f-review-container img {
 	height: 100%;
-	width: 66%;
+	width: 50%;
 }
 
 .footer-bottom {
