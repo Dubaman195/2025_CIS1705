@@ -4,9 +4,10 @@ body {
 	margin: 0;
 }
 
-/* Header */
+main,
 header {
 	width: 70%; /* 70% of the width of the body */
+	max-width: 1200px; /* 1200px is the maximum width for wider screens */
 	margin: 0 auto;
 }
 
@@ -14,8 +15,6 @@ header {
 main {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr); /* 1 column */
-	width: 70%; /* 70% of the width of the body */
-	margin: 0 auto;
 }
 
 /* Logo */
@@ -37,6 +36,10 @@ nav a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+img {
+	object-fit: contain;
 }
 
 /* Banner */

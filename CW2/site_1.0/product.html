@@ -65,7 +65,7 @@
 				<!-- Product Full Image -->
 				<img
 					src="robot-juice-images/robotjuicebikeoil.jpg"
-					alt="Full image of bike oil"
+					alt="Full image of bike oil next to moving bicycle"
 					class="prod-full"
 				/>
 				<!-- Product Information -->
@@ -73,33 +73,35 @@
 					<h2>Bike Oil</h2>
 					<p class="price">£99.99</p>
 					<!-- Product Form -->
-					<form>
-						<!-- Div to seperate dropdowns from buttons -->
-						<div>
-							<!-- Size Selection Dropdown -->
-							<label for="size" hidden>Item Size</label>
-							<select id="size" name="size">
-								<!-- Disabled option to act as description -->
-								<option value="" disabled selected required>Size</option>
-								<option value="100ml">100ml</option>
-								<option value="250ml">250ml</option>
-								<option value="500ml">500ml</option>
-							</select>
-							<!-- Quantity Selection Dropdown -->
-							<label for="qty" hidden>Item Quantity</label>
-							<select id="qty" name="qty">
-								<!-- Disabled option to act as description -->
-								<option value="" disabled selected required>Qty</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-							</select>
-						</div>
-						<!-- Buy Now Button -->
-						<button type="submit">BUY NOW</button>
-					</form>
+					<fieldset>
+						<form>
+							<!-- Div to seperate dropdowns from buttons -->
+							<div>
+								<!-- Size Selection Dropdown -->
+								<label for="size" hidden>Item Size</label>
+								<select id="size" name="size" required>
+									<!-- Disabled option to act as description -->
+									<option value="" disabled selected>Size</option>
+									<option value="100ml">100ml</option>
+									<option value="250ml">250ml</option>
+									<option value="500ml">500ml</option>
+								</select>
+								<!-- Quantity Selection Dropdown -->
+								<label for="qty" hidden>Item Quantity</label>
+								<select id="qty" name="qty" required>
+									<!-- Disabled option to act as description -->
+									<option value="" disabled selected>Qty</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+							</div>
+							<!-- Buy Now Button -->
+							<button type="submit">BUY NOW</button>
+						</form>
+					</fieldset>
 					<!-- Find Nearest Stockist Link -->
 					<a href="#">
 						<p class="prod-info-links">FIND NEAREST STOCKIST</p>
@@ -111,13 +113,13 @@
 						</a>
 						<!-- Social Media Icons -->
 						<a href="#"
-							><img src="robot-juice-images/facebook.jpg" alt="Facebook"
+							><img src="robot-juice-images/facebook.jpg" alt="Facebook Icon"
 						/></a>
 						<a href="#"
-							><img src="robot-juice-images/twitter.jpg" alt="Twitter"
+							><img src="robot-juice-images/twitter.jpg" alt="Twitter Icon"
 						/></a>
 						<a href="#"
-							><img src="robot-juice-images/email.jpg" alt="Email"
+							><img src="robot-juice-images/email.jpg" alt="Email Icon"
 						/></a>
 					</div>
 					<!-- Product Description -->
@@ -136,22 +138,22 @@
 				<h2>Similar Products</h2>
 				<!-- Similar Products Gallery -->
 				<div class="sim-prod-gallery">
-					<a>
+					<a href="#">
 						<img src="robot-juice-images/simprod.jpg" alt="Similar product 1" />
 					</a>
-					<a>
+					<a href="#">
 						<img src="robot-juice-images/simprod.jpg" alt="Similar product 2" />
 					</a>
-					<a>
+					<a href="#">
 						<img src="robot-juice-images/simprod.jpg" alt="Similar product 3" />
 					</a>
-					<a>
+					<a href="#">
 						<img src="robot-juice-images/simprod.jpg" alt="Similar product 4" />
 					</a>
-					<a>
+					<a href="#">
 						<img src="robot-juice-images/simprod.jpg" alt="Similar product 5" />
 					</a>
-					<a>
+					<a href="#">
 						<img src="robot-juice-images/simprod.jpg" alt="Similar product 6" />
 					</a>
 				</div>
